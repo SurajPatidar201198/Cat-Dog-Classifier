@@ -55,14 +55,14 @@ train_datagen=ImageDataGenerator(rescale=1./255,shear_range=0.2,zoom_range=0.2,h
 # In[7]:
 
 
-training_set= train_datagen.flow_from_directory('Downloads/training_set',target_size=(64,64),batch_size=32,class_mode='binary')
+training_set= train_datagen.flow_from_directory('training_set/training_set',target_size=(64,64),batch_size=32,class_mode='binary')
 
 
 # In[8]:
 
 
 test_datagen=ImageDataGenerator(rescale = 1./255)
-test_set=train_datagen.flow_from_directory('Downloads/test_set',target_size=(64,64),batch_size=32,class_mode='binary')
+test_set=train_datagen.flow_from_directory('test_set/test_set',target_size=(64,64),batch_size=32,class_mode='binary')
 
 
 # In[9]:
